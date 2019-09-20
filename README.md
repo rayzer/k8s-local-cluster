@@ -1,9 +1,13 @@
 # Kubernetes cluster
 A vagrant script for setting up a Kubernetes cluster using Kubeadm.
 
-Modified to suit my own network situation by using aliyun mirror instead.
+- Modified to suit my own network situation by using aliyun mirror instead.
+- including fix for missing /etc/default/kubelet.
+- Update api version for calico. apps/v1beta1 deprecated in v1.16.0.
 
-And including fix for missing /etc/default/kubelet.
+## Verified version
+
+Kubernetes v1.16.0
 
 
 ## How to Run
