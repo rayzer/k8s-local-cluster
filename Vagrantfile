@@ -104,7 +104,7 @@ $configureMaster = <<-SCRIPT
     kubectl apply -f https://raw.githubusercontent.com/rayzer/k8s-local-cluster/master/calico/rbac-kdd.yaml
     kubectl apply -f https://raw.githubusercontent.com/rayzer/k8s-local-cluster/master/calico/calico.yaml
 
-    kubeadm token create --print-join-command >> /etc/kubeadm_join_cmd.sh
+    kubeadm token create --print-join-command > /etc/kubeadm_join_cmd.sh
     chmod +x /etc/kubeadm_join_cmd.sh
 
     # required for setting up password less ssh between guest VMs
